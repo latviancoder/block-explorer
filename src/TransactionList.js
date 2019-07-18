@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { AppContext } from './App';
 import TransactionListItem from './TransactionListItem';
-import { colorBg, colorRowBorder } from './constants';
+import { colorRowBorder } from './constants';
 import Modal from './Modal';
 import TransactionDetails from './TransactionDetails';
 

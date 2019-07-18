@@ -130,6 +130,7 @@ function App() {
   };
 
   // Avoid callback props drilling
+  // memoize to maintain reference between renders
   const contextValue = useMemo(() => ({
     handleBlockSelect,
     handleTransactionSelect,
