@@ -11,6 +11,10 @@ const Section = styled.section`
   padding: 20px;
 `;
 
+const Count = styled.h2`
+  margin-top: 0;
+`;
+
 const BlockDetails = (props) => {
   const { setSelectedTransaction } = useContext(AppContext);
 
@@ -30,6 +34,7 @@ const BlockDetails = (props) => {
       }
     }}
   >
+    <Count>{props.transactions.length} transactions</Count>
     <TransactionList {...props}/>
   </Section>;
 };
