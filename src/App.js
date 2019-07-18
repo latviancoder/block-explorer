@@ -146,6 +146,7 @@ function App() {
       />
       {state.selectedBlock && (
         <BlockDetails
+          number={state.selectedBlock.number}
           transactions={state.selectedBlock.transactions.filter(t => t.value > 0)}
           selectedTransaction={state.selectedTransaction}
           isTransactionModalOpen={state.isTransactionModalOpen}
