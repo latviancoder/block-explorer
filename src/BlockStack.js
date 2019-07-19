@@ -60,7 +60,7 @@ const BlockStack = ({ blockStack, selectedBlock }) => {
     item => item.number,
     {
       from: { opacity: 0 },
-      enter: ({ left }) => ({ left: left + (initial ? 0 : 101), opacity: 1 }),
+      enter: ({ left }) => ({ left: left, opacity: 1 }),
       leave: ({ left }) => ({ left: left - 101, opacity: 0 }),
       update: ({ left }) => ({ left }),
       immediate: initial
